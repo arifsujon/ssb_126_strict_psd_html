@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #2d3950;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*===========header section CSS============*/
+header{
+    padding: 30px 0;
+    background-color: #f6f9f9;
+}
+.logo{
+    width: 20%;
+    float: left;
+}
+.logo a{}
+nav{
+    width: 80%;
+    float: left;
+}
+nav ul{
+    text-align: right;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 45px;
+}
+nav li a{
+    display: block;
+    padding-top: 10px;
+    color: #2d3950;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+nav li a:hover{
+    color: #15a4fa;
+}
+
+/*===========banner section CSS============*/
+.banner-section{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    width: 45%;
+}
+.banner-content h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-weight: 700;
+}
+.banner-content hr{
+    border: 1px solid #15a4fa;
+    margin: 30px 0;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-content a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 36px;
+    border-radius: 3px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.banner-content a:hover{
+    background-color: #15a4fa;
+}
+.arrow-down{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 30px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.arrow-down:hover{
+    color: #15a4fa;
+}
+
+/*===========about section CSS============*/
+.about-section{
+    background-color: #f6f9f9;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+.about-content{
+    text-align: center;
+}
+.about-content h2{
+    color: #2d3950;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.about-content p{
+    color: #999999;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/*===========feature section CSS============*/
+.feature-section{
+    padding: 65px  0;
+}
+.feature{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 30px;
+}
+.feature-icon i{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,2989d8+50,207cca+50,5fc3ff+50 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 50%, #2989d8 50%, #207cca 50%, #5fc3ff 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 50%,#2989d8 50%,#207cca 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 50%,#2989d8 50%,#207cca 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    font-size: 40px;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-shadow: 1px 1px 1px #00000047;
+}
+.feature h2{
+    font-size: 22px;
+    color: #2d3950;
+    font-weight: normal;
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+.feature p{
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/*===========work section CSS============*/
+.work-section{
+    background-color: #f6f9f9;
+    padding: 80px 0;
+}
+.work-heading{
+    text-align: center;
+    margin-bottom: 65px;
+}
+.work-heading h2{
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.work-heading p{
+    color: #909090;
+    font-size: 15px;
+}
+.work{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+.work-content{
+    position: relative;
+    cursor: pointer;
+}
+.work-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2bacfacc;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.work-content img{
+    width: 100%;
+}
+.work-content a.search{
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    transform: translate(-42%,-60%);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 15px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0;
+}
+.work-content a.link{
+    position: absolute;
+    top: 60%;
+    left: 58%;
+    transform: translate(-58%,-60%);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 15px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0;
+}
+.work-content:hover .work-overlay{
+    opacity: 1;
+}
+.work-content:hover a.search{
+    top: 50%;
+    left: 42%;
+    transform: translate(-42%,-50%);
+    opacity: 1;
+}
+.work-content:hover a.link{
+    top: 50%;
+    left: 58%;
+    transform: translate(-58%,-50%);
+    opacity: 1;
+}
+
+/*===========contac section CSS============*/
+.contact-form{
+    background-image: url(../images/contact_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 0 110px 0;
+    position: relative;
+    z-index: 1;
+}
+.contact-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950d9;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contact-details{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-details h2{
+    color: #fff;
+    font-size: 41px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.contact-details p{
+    color: #999999;
+    font-size: 15px;
+}
+.contact-form .form-content{
+    width: 550px;
+    margin: 0 auto;
+}
+.contact-form input{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #999999;
+    padding: 25px 20px;
+    font-size: 15px;
+    color: #999999;
+    background: transparent;
+    border-radius: 3px;
+}
+.contact-form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #999999;
+    padding: 25px 20px;
+    font-size: 15px;
+    color: #999999;
+    background: transparent;
+    border-radius: 3px;
+}
+
+input#sub {
+    width: 17px;
+    float: left;
+    margin-bottom: 0px;
+    height: 21px;
+    margin-right: 10px;
+    margin-top: 17px;
+}
+label {
+    color: #fff;
+    margin-top: 17px;
+    display: inline-block;
+}
+input#send{
+    width: 140px;
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 15px 50px;
+    border-color: #15a4fa;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+input[type="submit"]:hover {
+    background-color: #15a4fa;
+}
+
+/*===========footer CSS============*/
+footer{
+    background-color: #f6f9f9;
+    padding: 25px 0px;
+}
+.copyright{
+    width: 50%;
+    float: left;
+}
+.copyright{
+    width: 50%;
+    float: left;
+}
+.copyright p{
+    color: #999999;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.social-link{
+    width: 50%;
+    float: left;
+}
+.social-link ul{
+    text-align: right;
+    padding-right: 15px;
+}
+.social-link li{
+    display: inline-block;
+    list-style: none;
+    background-color: #15a4fa;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.social-link a{
+    color: #fff;
+    font-size: 15px;
+}
+.social-link li:hover{
+    background-color: #3b5998;
+}
